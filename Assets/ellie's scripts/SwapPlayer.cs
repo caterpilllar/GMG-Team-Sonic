@@ -14,12 +14,10 @@ public class SwapPlayer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player1.GetComponent<Move>().enabled = true;
-        player1.GetComponent<Jump>().enabled = true;
+        player1.GetComponent<Flap>().enabled = true;
         player2.GetComponent<Move>().enabled = false;
         player2.GetComponent<Jump>().enabled = false;
         player3.GetComponent<Move>().enabled = false;
-        player3.GetComponent<Jump>().enabled = false;
     }
 
     // Update is called once per frame
@@ -34,8 +32,7 @@ public class SwapPlayer : MonoBehaviour
     {
         if(player1Active == true)
         {
-            player1.GetComponent<Move>().enabled = false;
-            player1.GetComponent<Jump>().enabled = false;
+            player1.GetComponent<Flap>().enabled = false;
             player2.GetComponent<Move>().enabled = true;
             player2.GetComponent<Jump>().enabled = true;
             player1Active = false;
@@ -44,7 +41,6 @@ public class SwapPlayer : MonoBehaviour
         else if(player2Active == true)
         {
             player3.GetComponent<Move>().enabled = true;
-            player3.GetComponent<Jump>().enabled = true;
             player2.GetComponent<Move>().enabled = false;
             player2.GetComponent<Jump>().enabled = false;
             player2Active = false;
@@ -52,10 +48,8 @@ public class SwapPlayer : MonoBehaviour
         }
         else
         {
-            player1.GetComponent<Move>().enabled = true;
-            player1.GetComponent<Jump>().enabled = true;
+            player1.GetComponent<Flap>().enabled = true;
             player3.GetComponent<Move>().enabled = false;
-            player3.GetComponent<Jump>().enabled = false;
             player3Active = false;
             player1Active = true;
         }
