@@ -12,7 +12,7 @@ Date:                    2026-07-15T20:07:38Z
 [Licensing::IpcConnector] Successfully connected to: "LicenseClient-eleanordahl" at "2026-07-15T20:07:38.787719Z"
 
 COMMAND LINE ARGUMENTS:
-/Applications/Unity/Hub/Editor/6000.3.5f2/Unity.app/Contents/MacOS/Unity
+C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -36,6 +36,9 @@ LicenseClient-eleanordahl
 Successfully changed project path to: /Users/eleanordahl/Documents/GitHub/GMG-Team-Sonic
 /Users/eleanordahl/Documents/GitHub/GMG-Team-Sonic
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-gfx=262144"
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
     "memorysetup-temp-allocator-size-background-worker=32768"
@@ -160,7 +163,6 @@ Domain Reload Profiling: 884ms
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
-[CoreBusinessMetrics] Unexpected thread when updating session info.
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -186,6 +188,45 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
+Received Import Request.
+  Time since last request: 123632.719845 seconds.
+  path: Assets/Art/Sidescroller/Backgrounds/colored_land.png
+  artifactKey: Guid(b4c9650f38e51a5409da9dd44c6019d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sidescroller/Backgrounds/colored_land.png using Guid(b4c9650f38e51a5409da9dd44c6019d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7deaf2b7fb7602ca69f33df29d973e5a') in 0.4342155 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Art/Sidescroller/Backgrounds/starry_purple.png
+  artifactKey: Guid(aac0a276127af44e6baa88db211f8373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sidescroller/Backgrounds/starry_purple.png using Guid(aac0a276127af44e6baa88db211f8373) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd22074a4fd95ca5afc8438ebed99d6f8') in 0.0492578 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Art/Sidescroller/Backgrounds/blue_land.png
+  artifactKey: Guid(bae33333c162f0d4990ed6c9fa88917c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sidescroller/Backgrounds/blue_land.png using Guid(bae33333c162f0d4990ed6c9fa88917c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4bb89def5d3d8919e7a1fcfbea96a934') in 0.0745642 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Art/Sidescroller/Backgrounds/bg-night-sky-blank.png
+  artifactKey: Guid(9ed8a2d169c1a9548aa1e55f3df023f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sidescroller/Backgrounds/bg-night-sky-blank.png using Guid(9ed8a2d169c1a9548aa1e55f3df023f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2b87651169621fad4d2ec7621901830') in 0.0703386 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Art/Sidescroller/Backgrounds/starry_.png
+  artifactKey: Guid(4cf8f0e024145422fa3201a6fc6ea285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Sidescroller/Backgrounds/starry_.png using Guid(4cf8f0e024145422fa3201a6fc6ea285) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0161b07d51009428207e183fe6c8a76') in 0.0573496 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
 - Finished resetting the current domain, in  0.633 seconds
 Domain Reload Profiling: 1226ms
 	BeginReloadAssembly (145ms)
@@ -228,7 +269,6 @@ Unloading 3287 unused Assets / (1.1 MB). Loaded Objects now: 3875.
 Memory consumption went from 102.8 MB to 101.7 MB.
 Total: 8.150209 ms (FindLiveObjects: 0.336000 ms CreateObjectMapping: 0.141750 ms MarkObjects: 6.964125 ms  DeleteObjects: 0.708084 ms)
 
-========================================================================
 Received Import Request.
   Time since last request: 296731.803161 seconds.
   path: Assets/ellie's scripts/Flap.cs
