@@ -1,11 +1,15 @@
+Unity Editor version:    6000.3.5f2 (3fa8bc678cb0)
+Branch:                  6000.3/respin/6000.3.5f1-a1ec4b2f2d19
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 15.6.1 (Build 24G90)
+Darwin version:          24.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Date:                    2026-07-15T20:07:38Z
 [Licensing::Module] Trying to connect to existing licensing client channel...
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mayri" at "2026-07-16T16:12:17.5222429Z"
-Built from '6000.3/respin/6000.3.5f1-a1ec4b2f2d19' branch; Version is '6000.3.5f2 (3fa8bc678cb0) revision 4171964'; Using compiler version '194234433'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26200) Core' Language: 'en' Physical Memory: 16145 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-System  architecture: x64
-Process architecture: x64
-Date: 2026-07-16T16:12:17Z
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eleanordahl" at "2026-07-15T20:07:38.787663Z"
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
@@ -15,23 +19,22 @@ C:\Program Files\Unity\Hub\Editor\6000.3.5f2\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/mayri/Desktop/Elizabeth/GMG-Team-Sonic/My project (2)/GMG-Team-Sonic
+/Users/eleanordahl/Documents/GitHub/GMG-Team-Sonic
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54002
+57344
 -licensingIpc
-LicenseClient-mayri
+LicenseClient-eleanordahl
 -job-worker-count
-5
+3
 -background-job-worker-count
 8
 -gc-helper-count
 1
--name
-AssetImport
-Successfully changed project path to: C:/Users/mayri/Desktop/Elizabeth/GMG-Team-Sonic/My project (2)/GMG-Team-Sonic
-C:/Users/mayri/Desktop/Elizabeth/GMG-Team-Sonic/My project (2)/GMG-Team-Sonic
+-name AssetImport
+Successfully changed project path to: /Users/eleanordahl/Documents/GitHub/GMG-Team-Sonic
+/Users/eleanordahl/Documents/GitHub/GMG-Team-Sonic
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
     "memorysetup-temp-allocator-size-audio-worker=65536"
@@ -41,11 +44,9 @@ C:/Users/mayri/Desktop/Elizabeth/GMG-Team-Sonic/My project (2)/GMG-Team-Sonic
     "memorysetup-temp-allocator-size-background-worker=32768"
     "memorysetup-temp-allocator-size-job-worker=262144"
     "memorysetup-temp-allocator-size-preload-manager=33554432"
-    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
-    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
-    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
-    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
-    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
     "memorysetup-bucket-allocator-block-size=33554432"
@@ -66,14 +67,19 @@ C:/Users/mayri/Desktop/Elizabeth/GMG-Team-Sonic/My project (2)/GMG-Team-Sonic
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
-    "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [39892]  Target information:
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8641077440]  Target information:
 
-Player connection [39892]  * "[IP] 192.168.1.254 [Port] 0 [Flags] 2 [Guid] 2214380531 [EditorId] 2214380531 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-L9JQRQ0) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [8641077440]  * "[IP] 192.168.86.29 [Port] 0 [Flags] 2 [Guid] 1793861128 [EditorId] 1793861128 [Version] 1048832 [Id] OSXEditor(0,mac.lan) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [39892] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [39892] Host joined alternative multi-casting on [225.0.0.222:34997]...
-JobSystem: Creating JobQueue using job-worker-count value 5
+Player connection [8641077440] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8641077440] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -84,81 +90,74 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 46.05 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.60 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.3.5f2 (3fa8bc678cb0)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/mayri/Desktop/Elizabeth/GMG-Team-Sonic/My project (2)/GMG-Team-Sonic/Assets
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.3.5f2/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/eleanordahl/Documents/GitHub/GMG-Team-Sonic/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
-    Vendor:   NVIDIA
-    VRAM:     5955 MB
-    Driver:   32.0.15.6094
+ preferred device: Apple M2 (high power)
+Metal devices available: 1
+0: Apple M2 (high power)
+Using device Apple M2 (high power)
+Initializing Metal device caps: Apple M2
+Mac GPU Family: 2
+Apple GPU Family: 8
+MSL Version: 3.0
+Has Float MSAA: 1
+Has Float Filtering: 1
+ReadWrite Texture Tier: 2
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56064
+Mono path[0] = '/Applications/Unity/Hub/Editor/6000.3.5f2/Unity.app/Contents/Resources/Scripting/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/6000.3.5f2/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/6000.3.5f2/Unity.app/Contents/Resources/Scripting/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56613
 Begin MonoManager ReloadAssembly
-Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-[Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              dfd11b36bd694b6fa266f61fada97919
-  Correlation Id:          b948d01e0df42c3d29f18a9eb100b439
-  External correlation Id: 1464886284224852533
-  Machine Id:              rrPeVTvEOvC0YVK7/tV/TwGy7PY=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-mayri" (connect: 0.00s, validation: 0.01s, handshake: 10.05s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-mayri-notifications" at "2026-07-16T16:12:27.5933667Z"
-[Licensing::Module] Licensing Background thread has ended after 10.07s
-[Licensing::Module] Licensing is initialized (took 4.53s).
-[Licensing::Client] Successfully resolved entitlement details
-[Licensing::Module] License group:
-  Id: 2476012037032-UnityPersXXXX
-  Product: Unity Personal
-  Type: Assigned
-  Expiration: Unlimited
-Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.3.5f2/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 4.549749 seconds.
-- Loaded All Assemblies, in  7.238 seconds
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
+  Session Id:              eb96fde456344c46834b6c872bb743e1
+  Correlation Id:          e4df1e3d14343ebe533b544f1fd071f2
+  External correlation Id: 6915079830333635986
+  Machine Id:              sNe0EGeIJwKt/HXL0mqc1kQ48ak=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-eleanordahl" (connect: 0.00s, validation: 0.00s, handshake: 0.80s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-eleanordahl-notifications" at "2026-07-15T20:07:39.591562Z"
+[Licensing::Module] Licensing Background thread has ended after 0.80s
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/6000.3.5f2/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.000956 seconds.
+- Loaded All Assemblies, in  0.440 seconds
+Native extension for OSXStandalone target not found
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.433 seconds
-Domain Reload Profiling: 8652ms
-	BeginReloadAssembly (1346ms)
+- Finished resetting the current domain, in  0.444 seconds
+Domain Reload Profiling: 884ms
+	BeginReloadAssembly (130ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (268ms)
-	RebuildNativeTypeToScriptingClass (110ms)
-	initialDomainReloadingComplete (4727ms)
-	LoadAllAssembliesAndSetupDomain (768ms)
-		LoadAssemblies (1281ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (198ms)
+		LoadAssemblies (130ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (756ms)
-			TypeCache.Refresh (751ms)
-				TypeCache.ScanAssembly (705ms)
+		AnalyzeDomain (195ms)
+			TypeCache.Refresh (193ms)
+				TypeCache.ScanAssembly (176ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (1435ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (444ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1306ms)
+		SetupLoadedEditorAssemblies (397ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (161ms)
-			SetLoadedEditorAssemblies (11ms)
-			BeforeProcessingInitializeOnLoad (264ms)
-			ProcessInitializeOnLoadAttributes (525ms)
-			ProcessInitializeOnLoadMethodAttributes (341ms)
+			InitializePlatformSupportModulesInManaged (50ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (107ms)
+			ProcessInitializeOnLoadAttributes (156ms)
+			ProcessInitializeOnLoadMethodAttributes (77ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (3ms)
 		ExecutionOrderSort2 (0ms)
@@ -171,14 +170,17 @@ Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInter
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
 [Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  2.194 seconds
+[Licensing::Module] License group:
+  Id: 1375961873804-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+- Loaded All Assemblies, in  0.594 seconds
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 4.59 ms, found 3 plugins.
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
 Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
@@ -186,48 +188,6 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.672 seconds
-Domain Reload Profiling: 4847ms
-	BeginReloadAssembly (555ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (18ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (104ms)
-	RebuildCommonClasses (109ms)
-	RebuildNativeTypeToScriptingClass (42ms)
-	initialDomainReloadingComplete (109ms)
-	LoadAllAssembliesAndSetupDomain (1360ms)
-		LoadAssemblies (1155ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (515ms)
-			TypeCache.Refresh (399ms)
-				TypeCache.ScanAssembly (351ms)
-			BuildScriptInfoCaches (90ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (2673ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2263ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (13ms)
-			BeforeProcessingInitializeOnLoad (707ms)
-			ProcessInitializeOnLoadAttributes (1327ms)
-			ProcessInitializeOnLoadMethodAttributes (180ms)
-			AfterProcessingInitializeOnLoad (23ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (22ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 12.17 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3285 unused Assets / (1.0 MB). Loaded Objects now: 3875.
-Memory consumption went from 92.5 MB to 91.5 MB.
-Total: 25.771300 ms (FindLiveObjects: 0.894800 ms CreateObjectMapping: 1.070500 ms MarkObjects: 20.563900 ms  DeleteObjects: 3.240100 ms)
-
-========================================================================
 Received Import Request.
   Time since last request: 123632.722440 seconds.
   path: Assets/Art/Sidescroller/Backgrounds/bg-sky-clouds.png
@@ -235,7 +195,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Backgrounds/bg-sky-clouds.png using Guid(318e1d0def2d9254bbb1ad7c66bfca69) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6166f2201e5b6a8f0b482b47b240f902') in 0.4646279 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 0.000053 seconds.
   path: Assets/Art/Sidescroller/Backgrounds/BKG01.png
@@ -243,7 +202,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Backgrounds/BKG01.png using Guid(915a342969e02584daaa747b82707dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c561423133de707646f71562ff099bcd') in 0.084514 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 0.000061 seconds.
   path: Assets/Art/Sidescroller/Backgrounds/starry_green.png
@@ -251,7 +209,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Backgrounds/starry_green.png using Guid(9f65295817f334b52a75fdf4dc91bed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7f07957ad6684cba2d52ae86e96969f') in 0.0514478 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 0.000036 seconds.
   path: Assets/Art/Sidescroller/Backgrounds/night-sky.png
@@ -259,7 +216,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Backgrounds/night-sky.png using Guid(62f0a90fbeb423c4db6e257b10d8c630) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5d74d2663f513d58e0289a8e4bd12b5') in 0.0751854 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 0.000123 seconds.
   path: Assets/Art/Sidescroller/Backgrounds/colored_desert.png
@@ -267,7 +223,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Backgrounds/colored_desert.png using Guid(78ee48aa9a2407646a3b4a7223e4c26e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8e1d39628871e94b70d6aa649f503a1b') in 0.0657409 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 1072.796698 seconds.
   path: Assets/Art/Sidescroller/Players/Kitty/Kitty.prefab
@@ -275,7 +230,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Kitty/Kitty.prefab using Guid(94aa7560b17011f4498e49e4b5283588) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bbf6e3bf45742fae8e682824512f08d3') in 0.2740853 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
-========================================================================
 Received Import Request.
   Time since last request: 22.892913 seconds.
   path: Assets/Art/Sidescroller/Players/Blub Blub/Blub.prefab
@@ -283,7 +237,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Blub Blub/Blub.prefab using Guid(3332803905ea3cc46912f9f0b8cdd44c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '561e03b9c9270ea6c631266001a1a9f1') in 0.0403855 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
-========================================================================
 Received Import Request.
   Time since last request: 1.413688 seconds.
   path: Assets/Art/Sidescroller/Players/Girl/Girl.prefab
@@ -291,7 +244,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Girl/Girl.prefab using Guid(81e83416d2752e2499ccc34d065c4991) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0503df5d32f2ec72a12c60783ae753f6') in 0.0478538 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
-========================================================================
 Received Import Request.
   Time since last request: 3.339151 seconds.
   path: Assets/Art/Sidescroller/Players/Space Person/Space Person.prefab
@@ -299,7 +251,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Space Person/Space Person.prefab using Guid(ee80d388fcd31f6439e7cce42011d2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a96a4cc3c5e829f6218cd0053095ab3') in 0.5173482 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
 
-========================================================================
 Received Import Request.
   Time since last request: 2.099715 seconds.
   path: Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy
@@ -307,7 +258,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy using Guid(5ef42789be2506f4893c4622d915911d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '930998e3df15367e7d48c12b0f5f2838') in 0.0009153 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-========================================================================
 Received Import Request.
   Time since last request: 0.381476 seconds.
   path: Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Virtual Guy.prefab
@@ -315,7 +265,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Virtual Guy.prefab using Guid(338e07d06326a5d469b87c98e606cedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd2327f06d5243b5734a4f0a5e66d8a9') in 0.0373892 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
-========================================================================
 Received Import Request.
   Time since last request: 1.188821 seconds.
   path: Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Animations
@@ -323,7 +272,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Animations using Guid(7fbdbc10bd5297b4dadda1a627473a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8561de1c52c7945b22fc637b419e75a9') in 0.0012029 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-========================================================================
 Received Import Request.
   Time since last request: 0.292856 seconds.
   path: Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Animations/Double Jump (32x32).png
@@ -331,7 +279,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Animations/Double Jump (32x32).png using Guid(62a315a8619ac644f899c29e008115c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9f2fa1651813bdbb4a127cae7bf7d86e') in 0.0418802 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
 
-========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
   path: Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Animations/Idle (32x32).png
@@ -339,7 +286,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Animations/Idle (32x32).png using Guid(40de9a8703e2e5a47882b0b86451c741) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0525b4982d0b1ca8d6febe9e0453427') in 0.069047 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 13
 
-========================================================================
 Received Import Request.
   Time since last request: 0.000044 seconds.
   path: Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Animations/Run (32x32).png
@@ -347,7 +293,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Animations/Run (32x32).png using Guid(552146dbb8bac6f449493bca4b69540f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9324af80e0c2a7a7f45868a33492b19c') in 0.0958074 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
 
-========================================================================
 Received Import Request.
   Time since last request: 0.000050 seconds.
   path: Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Animations/Jump (32x32).png
@@ -355,7 +300,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Pixel Adventure Players/Virtual Guy/Animations/Jump (32x32).png using Guid(320f4eb52e227b446830a1f6fd691fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bb225f15932215fe00b9a8ba935f624') in 0.0461024 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 4.284811 seconds.
   path: Assets/Art/Sidescroller/Players/Pixel Adventure Players/Ninja Frog/Ninja Frog.prefab
@@ -363,7 +307,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Pixel Adventure Players/Ninja Frog/Ninja Frog.prefab using Guid(b98e132a15b2dc34eb91884bb0451edb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9064cd48140c6ce182407aa9cb153134') in 0.0342211 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
-========================================================================
 Received Import Request.
   Time since last request: 0.793634 seconds.
   path: Assets/Art/Sidescroller/Players/Pixel Adventure Players/Pink Man/PinkMan.prefab
@@ -371,7 +314,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Pixel Adventure Players/Pink Man/PinkMan.prefab using Guid(14c3cc3d10b8f7547948583f8b8f5231) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee224cedcca08e3ae12e43bbcc1b2c77') in 0.0378437 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
-========================================================================
 Received Import Request.
   Time since last request: 1.204250 seconds.
   path: Assets/Art/Sidescroller/Players/Pixel Adventure Players/Mask Dude/Mask Dude.prefab
@@ -379,7 +321,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Pixel Adventure Players/Mask Dude/Mask Dude.prefab using Guid(62683a36ec5697e4c96710c3115972fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7248311f1731df010c117e68295ee63a') in 0.0371878 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
 
-========================================================================
 Received Import Request.
   Time since last request: 3.077375 seconds.
   path: Assets/Art/Sidescroller/Players/Kitty/Kitty Animations
@@ -387,7 +328,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Kitty/Kitty Animations using Guid(2dc56d53e2a3cef4f818136cf87ab7fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30aee2423c2d5289bb3b4f87ac5f4170') in 0.0015589 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-========================================================================
 Received Import Request.
   Time since last request: 1.310347 seconds.
   path: Assets/Art/Sidescroller/Players/Kitty/Kitty Animations/kitty idle left 2.png
@@ -395,7 +335,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Kitty/Kitty Animations/kitty idle left 2.png using Guid(bccf24329f4dc2a40b0c99f5ad7bee18) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '82d9249497c67a95988d3b1233815a36') in 0.0316599 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 0.010242 seconds.
   path: Assets/Art/Sidescroller/Players/Kitty/Kitty Animations/kitty walk left 1.png
@@ -403,7 +342,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Kitty/Kitty Animations/kitty walk left 1.png using Guid(f648fdf6aa6714348bc989909fc6090d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b80b5fe8f8096160408fa464ced4157e') in 0.0246854 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 0.000735 seconds.
   path: Assets/Art/Sidescroller/Players/Kitty/Kitty Animations/kitty walk right 1.png
@@ -411,7 +349,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Kitty/Kitty Animations/kitty walk right 1.png using Guid(857b020deb9f2c94db123c0e56e94aec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0d0c04f67fdd23a7fb8afca231099b06') in 0.0309595 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 3.908484 seconds.
   path: Assets/Art/Sidescroller/Players/Blub Blub/Art/Blub_Idle1.png
@@ -419,7 +356,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Blub Blub/Art/Blub_Idle1.png using Guid(f786717e59f1b3e40b6dbc7d9ded9e75) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fcc28307504f3052455771f2f510a473') in 0.0236883 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 0.066199 seconds.
   path: Assets/Art/Sidescroller/Players/Blub Blub/Art/BLub_Jump_Anim_0000_Frame-7.png
@@ -427,7 +363,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Blub Blub/Art/BLub_Jump_Anim_0000_Frame-7.png using Guid(f8bee3540874d264dae88c1d512a505b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50553ae9c5b71f55b7251d40a537b924') in 0.0235649 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 0.000745 seconds.
   path: Assets/Art/Sidescroller/Players/Blub Blub/Art/BLub_Jump_Anim_0002_Frame-5.png
@@ -435,7 +370,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Blub Blub/Art/BLub_Jump_Anim_0002_Frame-5.png using Guid(ad284f1f78d04e145bb030d9b4dcf229) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fd11ff31256ac860bd9ce15a2a0cd467') in 0.0245377 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 0.013061 seconds.
   path: Assets/Art/Sidescroller/Players/Blub Blub/Art/BLub_Jump_Anim_0005_Frame-2.png
@@ -443,7 +377,6 @@ Received Import Request.
 Start importing Assets/Art/Sidescroller/Players/Blub Blub/Art/BLub_Jump_Anim_0005_Frame-2.png using Guid(b09ef093a8efc904ba52ec9750d5bbe1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e2f11811b41b3aea2c19dd4b84efbd7') in 0.0308358 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
 Received Import Request.
   Time since last request: 0.009163 seconds.
   path: Assets/Art/Sidescroller/Players/Blub Blub/Art/Blub_Walk_Right_Anim1.png
@@ -455,3 +388,66 @@ Editor requested this worker to shutdown with reason: Scaling down because of id
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
+- Finished resetting the current domain, in  0.632 seconds
+Domain Reload Profiling: 1226ms
+	BeginReloadAssembly (147ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (353ms)
+		LoadAssemblies (244ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (134ms)
+				TypeCache.ScanAssembly (118ms)
+			BuildScriptInfoCaches (24ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (632ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (518ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (134ms)
+			ProcessInitializeOnLoadAttributes (324ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Launching external process: /Applications/Unity/Hub/Editor/6000.3.5f2/Unity.app/Contents/Helpers/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3287 unused Assets / (1.1 MB). Loaded Objects now: 3875.
+Memory consumption went from 102.9 MB to 101.8 MB.
+Total: 8.320875 ms (FindLiveObjects: 0.406500 ms CreateObjectMapping: 0.146875 ms MarkObjects: 6.955500 ms  DeleteObjects: 0.811625 ms)
+
+Received Import Request.
+  Time since last request: 296731.804218 seconds.
+  path: Assets/Scenes/TestScene.unity
+  artifactKey: Guid(e38101e016d8a46cba687a04b1706b45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Scenes/TestScene.unity using Guid(e38101e016d8a46cba687a04b1706b45) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '65012e8a53a48041c98c126bb7411efa') in 0.042991167 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Received Import Request.
+  Time since last request: 85.251879 seconds.
+  path: Assets/ellie's scripts/Flap.cs
+  artifactKey: Guid(af370b361ba54461a9bc3483fa1e3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ellie's scripts/Flap.cs using Guid(af370b361ba54461a9bc3483fa1e3ac1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f0436a701c9fe57c3f0a52e00f8c077') in 0.00450325 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+Received Import Request.
+  Time since last request: 49.467067 seconds.
+  path: Assets/ellie's scripts/SwapPlayer.cs
+  artifactKey: Guid(f56787574c5ed42d6a498efb6fdde4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ellie's scripts/SwapPlayer.cs using Guid(f56787574c5ed42d6a498efb6fdde4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bbb890c214e64818fec5ca3165699563') in 0.019151666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
