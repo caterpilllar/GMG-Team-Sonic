@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 6000750345068721831}
   - component: {fileID: 881021029138912514}
   - component: {fileID: 3264640592439076050}
+  - component: {fileID: 9201976607376865004}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Player
@@ -106,9 +107,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4727843811015798842}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8013806728517659522}
@@ -237,6 +238,19 @@ MonoBehaviour:
   CrouchingSprite: {fileID: 21300000, guid: a6322e067e0554d3f8f6a410b608e048, type: 3}
   sneakKey: 32
   sneakSpeed: 0.25
+--- !u!114 &9201976607376865004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4727843811015798842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb970c45b40bb4652a8310660a03dfb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthSystemAttribute
+  health: 3
 --- !u!1 &8773967885798732751
 GameObject:
   m_ObjectHideFlags: 0
