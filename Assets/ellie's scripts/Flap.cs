@@ -9,9 +9,11 @@ public class Flap : Physics2DObject
     public string groundTag = "Ground";
     private bool onGround = false;
 
+    public bool canFlap = true;
+
      private void Update()
     { 
-      if (Input.GetKeyDown(KeyCode.Space))
+      if (Input.GetKeyDown(KeyCode.Space) && canFlap == true)
         {
             direction = Vector3.up * strength;
             if (onGround == true)
