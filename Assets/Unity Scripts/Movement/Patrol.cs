@@ -19,12 +19,17 @@ public class Patrol : Physics2DObject
 	private Vector2[] newWaypoints;
 	private int currentTargetIndex;
 
+	[Header("Activation")]
+	public bool activated = false;
+	public Lever lever;
+
 	void Start ()
 	{
 		currentTargetIndex = 0;
 
 		newWaypoints = new Vector2[waypoints.Length+1];
 		int w = 0;
+		
 		for(int i=0; i<waypoints.Length; i++)
 		{
 			newWaypoints[i] = waypoints[i];
@@ -46,7 +51,22 @@ public class Patrol : Physics2DObject
 	{
 		Vector2 currentTarget = newWaypoints[currentTargetIndex];
 
-		rigidbody2D.MovePosition(transform.position + ((Vector3)currentTarget - transform.position).normalized * speed * Time.fixedDeltaTime);
+		if(lever.active == true)
+        {
+			activated = true;
+        }
+
+		if (activated == true)
+		{
+			this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+			this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+			rigidbody2D.MovePosition(transform.position + ((Vector3)currentTarget - transform.position).normalized * speed * Time.fixedDeltaTime);
+		}
+        else
+        {
+			this.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY;
+		}
+		
 
 		if(Vector2.Distance(transform.position, currentTarget) <= .1f)
 		{
