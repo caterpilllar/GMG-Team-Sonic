@@ -21,7 +21,7 @@ public class Patrol : Physics2DObject
 
 	[Header("Activation")]
 	public bool activated = false;
-	public Lever lever;
+	public Lever2 lever;
 
 	void Start ()
 	{

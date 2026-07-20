@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7948483097046899383}
   - component: {fileID: 6823058366072232383}
-  - component: {fileID: 1464122486589031291}
   - component: {fileID: 3232020109196670703}
+  - component: {fileID: 5099933754265255777}
   m_Layer: 0
   m_Name: Lever
   m_TagString: Untagged
@@ -93,23 +93,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &1464122486589031291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8036666202359947844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa7ac09c0432c42019b8b27788655182, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lever
-  deactivatedSprite: {fileID: 962792364033266818, guid: 2c155fbbf434f4cea9d60dd775f4b828, type: 3}
-  activatedSprite: {fileID: 7274185501958371503, guid: 2c155fbbf434f4cea9d60dd775f4b828, type: 3}
-  active: 0
-  spriteRenderer: {fileID: 6823058366072232383}
-  audioSource: {fileID: 0}
 --- !u!61 &3232020109196670703
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -156,3 +139,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5838287, y: 0.67796254}
   m_EdgeRadius: 0
+--- !u!114 &5099933754265255777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8036666202359947844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4c79a6caaca4600b1e98d892c49ab4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lever2
+  deactivatedSprite: {fileID: 962792364033266818, guid: 2c155fbbf434f4cea9d60dd775f4b828, type: 3}
+  activatedSprite: {fileID: 7274185501958371503, guid: 2c155fbbf434f4cea9d60dd775f4b828, type: 3}
+  active: 0
+  spriteRenderer: {fileID: 6823058366072232383}
+  audioSource: {fileID: 0}

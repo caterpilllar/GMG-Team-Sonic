@@ -2287,17 +2287,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Key
   key: 0
---- !u!114 &1589225898 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1464122486589031291, guid: aab36c6f3dedd496eb1c3cdb7438602f, type: 3}
-  m_PrefabInstance: {fileID: 3188290198431452102}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa7ac09c0432c42019b8b27788655182, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Lever
 --- !u!1001 &1674719012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2349,7 +2338,7 @@ PrefabInstance:
     - target: {fileID: 9073928323714354997, guid: 65b0c9eef9de81346b0ee80a3fa457aa, type: 3}
       propertyPath: lever
       value: 
-      objectReference: {fileID: 1589225898}
+      objectReference: {fileID: 3188290198431452108}
     - target: {fileID: 9073928323714354997, guid: 65b0c9eef9de81346b0ee80a3fa457aa, type: 3}
       propertyPath: speed
       value: 5
@@ -2387,6 +2376,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1464122486589031291, guid: aab36c6f3dedd496eb1c3cdb7438602f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7948483097046899383, guid: aab36c6f3dedd496eb1c3cdb7438602f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.48458
@@ -2436,6 +2429,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aab36c6f3dedd496eb1c3cdb7438602f, type: 3}
+--- !u!114 &3188290198431452108 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5099933754265255777, guid: aab36c6f3dedd496eb1c3cdb7438602f, type: 3}
+  m_PrefabInstance: {fileID: 3188290198431452102}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4c79a6caaca4600b1e98d892c49ab4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lever2
 --- !u!1001 &6854804000787325379
 PrefabInstance:
   m_ObjectHideFlags: 0
