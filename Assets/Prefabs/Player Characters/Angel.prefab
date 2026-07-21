@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 524801657384751162}
   - component: {fileID: 5504694538194339249}
   - component: {fileID: 7410855582603980237}
+  - component: {fileID: 8032567712392391390}
+  - component: {fileID: 5056464955068488082}
   m_Layer: 0
   m_Name: Angel
   m_TagString: Player
@@ -183,7 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Move
   rigidbody2D: {fileID: 0}
   typeOfControl: 0
-  speed: 1
+  speed: 0.5
   movementType: 1
   orientToDirection: 1
   lookAxis: 1
@@ -202,7 +204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Jump
   rigidbody2D: {fileID: 0}
   key: 32
-  jumpStrength: 10
+  jumpStrength: 7
   groundTag: Ground
   checkGround: 1
 --- !u!114 &7410855582603980237
@@ -218,3 +220,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthSystemAttribute
   health: 3
+--- !u!114 &8032567712392391390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5758106802894023072}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98dd12a669d529248af6a59d29925a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SidescrollerShootProjectile
+  projectilePrefab: {fileID: 6838195860478125434, guid: f6156e83b2154ce4f81ef7be2b0d38de, type: 3}
+  shootButton: 0
+  projectilesPerSecond: 5
+  projectileSpeed: 100
+  destroyTime: 2
+  fireInDirectionOfMouseCursor: 1
+  soundFile: {fileID: 0}
+  LoopSound: 0
+--- !u!114 &5056464955068488082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5758106802894023072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97bb54e0d2ccb4d78bd44b2ea850a6e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MODIFIEDSidescrollerShootProjectile
+  projectilePrefab: {fileID: 6838195860478125434, guid: f6156e83b2154ce4f81ef7be2b0d38de, type: 3}
+  shootButton: 11
+  projectileSpeed: 100
+  destroyTime: 3
+  fireInDirectionOfMouseCursor: 1
+  soundFile: {fileID: 0}
+  LoopSound: 0

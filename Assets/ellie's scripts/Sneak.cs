@@ -54,7 +54,7 @@ public class Sneak : Physics2DObject
     }
     private void FixedUpdate()
     {
-     underObject = Physics2D.BoxCast(transform.position, CrouchCollider.bounds.size, 0f, Vector2.up, 0.05f);
+     underObject = Physics2D.BoxCast(transform.position, CrouchCollider.bounds.size, 0f, Vector2.up, 0.1f);
      if (underObject == true)
         {
             isSneaking = true;
