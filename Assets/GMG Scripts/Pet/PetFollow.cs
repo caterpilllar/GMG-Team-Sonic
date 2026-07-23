@@ -3,6 +3,8 @@ using System.Collections;
 using System;
 
 /// Author: Matthew Mazan [Masterio]
+
+/// ellie: i disabled the 'animator.SetBool("Moving")' lines since they were causing a crap ton of errors. it can be enabled again if you need it to be.
 public class PetFollow : MonoBehaviour
 {
     public Transform target = null;                    // follow by target
@@ -82,7 +84,7 @@ public class PetFollow : MonoBehaviour
                 {
                     transform.position = Vector3.Lerp(transform.position, _record.position, Time.deltaTime * followSpeed);
                     //Debug.Log("1");
-                    animator.SetBool("Moving", true);
+                    //animator.SetBool("Moving", true);
                 }
             }
             else if ((target.position - transform.position).magnitude > targetDistance)
@@ -96,7 +98,7 @@ public class PetFollow : MonoBehaviour
                 if (_record != null)
                 {
                     transform.position = Vector3.Lerp(transform.position, _record.position, Time.deltaTime * followSpeed);
-                    if(transform.position.x < _record.position.x && animator.GetBool("Moving"))
+                    if(transform.position.x < _record.position.x)
                     {
                         sprite.flipX = false;
                     }
@@ -105,7 +107,7 @@ public class PetFollow : MonoBehaviour
                         sprite.flipX = true;
                     }
                     //Debug.Log("2");
-                    animator.SetBool("Moving", true);
+                    //animator.SetBool("Moving", true);
                 }
                 }
             else if (targetDistanceY && Mathf.Abs(target.position.y - transform.position.y) > 0.05f)
@@ -114,12 +116,12 @@ public class PetFollow : MonoBehaviour
                 {
                     transform.position = Vector3.Lerp(transform.position, new Vector3(transform.position.x, target.position.y, transform.position.z), Time.deltaTime * followSpeed);
                     //Debug.Log("3");
-                    animator.SetBool("Moving", true);
+                    //animator.SetBool("Moving", true);
                 }
                 }
             else
             {
-                animator.SetBool("Moving", false);
+                //animator.SetBool("Moving", false);
                 _recording = false;
             }
         }

@@ -2,12 +2,11 @@
 using System.Collections;
 
 [AddComponentMenu("Playground/Attributes/Modify Health")]
-public class MODIFIEDModifyHealthAttribute : MonoBehaviour
+public class ModifyHealthAttribute : MonoBehaviour
 {
 
 	public bool destroyWhenActivated = false;
 	public int healthChange = -1;
-
 	//This will create a dialog window asking for which dialog to add
 	private void Reset()
 	{
@@ -23,8 +22,7 @@ public class MODIFIEDModifyHealthAttribute : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D colliderData)
 	{
 		HealthSystemAttribute healthScript = colliderData.gameObject.GetComponent<HealthSystemAttribute>();
-		
-		if(healthScript != null)
+		if(healthScript != null && colliderData.gameObject.tag == "Enemy")
 		{
 			// subtract health from the player
 			healthScript.ModifyHealth(healthChange);
