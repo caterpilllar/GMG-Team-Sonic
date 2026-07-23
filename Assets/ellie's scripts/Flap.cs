@@ -11,6 +11,9 @@ public class Flap : Physics2DObject
 
     public bool canFlap = true;
 
+    //Animations
+	  public Animator animator;
+
      private void Update()
     { 
       if (Input.GetKeyDown(KeyCode.Space) && canFlap == true)
@@ -19,6 +22,7 @@ public class Flap : Physics2DObject
             if (onGround == true)
             {
               onGround = false;  
+              if (animator != null) animator.SetBool("jumping", true);
             }
         }
     if (onGround == false)
@@ -32,6 +36,7 @@ public class Flap : Physics2DObject
 		if(collisionData.gameObject.CompareTag(groundTag))
 		{
 			onGround = true;
+      if (animator != null) animator.SetBool("jumping", false);
 		}
 	}
 

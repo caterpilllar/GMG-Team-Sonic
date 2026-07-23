@@ -107,6 +107,10 @@ public class PatrolInspector : InspectorBase
 		}
 		serializedObject.FindProperty("orientToDirection").boolValue = orientToDirectionTemp;
 
+		GUILayout.Label("Activation", EditorStyles.boldLabel);
+		EditorGUILayout.PropertyField(serializedObject.FindProperty("activated"));
+		EditorGUILayout.PropertyField(serializedObject.FindProperty("lever"));
+
 		serializedObject.ApplyModifiedProperties();
 	}
 	
