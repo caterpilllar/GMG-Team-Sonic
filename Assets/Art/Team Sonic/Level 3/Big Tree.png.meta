@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 47537bb41725fca42a60f9cbbbdf25df
+guid: 53c3a406faa25fd4a8c80cc79fbf2e1f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7778931817278737426
-    second: Swamp BG_0
+      213: 707138290047734069
+    second: Big Tree_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Swamp BG_0
+      name: Big Tree_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 500
-        height: 500
+        width: 453
+        height: 434
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21c02e4f54154fb60800000000000000
-      internalID: 7778931817278737426
+      spriteID: 5315f59378240d900800000000000000
+      internalID: 707138290047734069
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Swamp BG_0: 7778931817278737426
+      Big Tree_0: 707138290047734069
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
