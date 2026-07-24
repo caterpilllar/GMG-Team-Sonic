@@ -23,3 +23,11 @@ Thumbs.db
 # Unity packages
 *.unitypackage
 Assets/My Scripts/Flap.cs
+Logs/AssetImportWorker1.log
+Logs/AssetImportWorker1.log
+Logs/AssetImportWorker1.log
+Logs/shadercompiler-AssetImportWorker0-0.log
+Logs/AssetImportWorker0.log
+/Logs
+Logs/AssetImportWorker1.log
+/.vs
