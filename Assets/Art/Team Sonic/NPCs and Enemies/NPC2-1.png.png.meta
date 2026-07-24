@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 47537bb41725fca42a60f9cbbbdf25df
+guid: 790fb1dc1f64c444c80e79cb4b470b77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7778931817278737426
-    second: Swamp BG_0
+      213: -836190226952033747
+    second: NPC2-1.png_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Swamp BG_0
+      name: NPC2-1.png_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 500
-        height: 500
+        width: 82
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21c02e4f54154fb60800000000000000
-      internalID: 7778931817278737426
+      spriteID: d2aeedd3b614564f0800000000000000
+      internalID: -836190226952033747
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Swamp BG_0: 7778931817278737426
+      NPC2-1.png_0: -836190226952033747
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
